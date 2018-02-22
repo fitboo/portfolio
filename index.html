@@ -1,1 +1,156 @@
-Привет пррррр
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Made by Alex</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <!-- header -->
+  <header class="main-header">
+    <div class="container clearfix"> <!-- центровщик -->
+      <div class="logo">Made by Alex</div> <!-- будет float: left; -->
+      <div class="main-header_right clearfix"> <!-- будет float: right; -->
+        <nav class="main-navigation">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Work</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="social">
+          <a href="#" class="social_item"><i class=""></i></a> <!-- <i> - для иконочного шрифта -->
+          <a href="#" class="social_item"><i class=""></i></a>
+          <a href="#" class="social_item"><i class=""></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- about -->
+  <div class="about"> <!-- Можно было сделать <section> -->
+    <div class="container">
+      <h1>I’m a designer from the United Kingdom. <span>Get in touch today!</span></h1> <!-- потому что текст обычный и жирный -->
+      
+      <!-- box -->
+      <div class="box">
+        <div class="box_title">Webpatterns</div>
+        <a href="#">www.webpatterns.ru</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis amet dolores ipsa, in laborum obcaecati incidunt magni deserunt atque corporis optio perferendis hic. Velit iure cum, eaque molestiae animi!</p>
+        <a href="#" class="btn">Visit site</a>
+        <a href="#" class="btn btn--transparent">More info</a>
+      </div>
+      
+      <!-- promo text -->
+      <p class="about_text">Looking for a fresh new website design? <span>I provide awesome website design packages starting from as low as <a href="#">$199!</a></span>
+      </p>
+    </div>
+  </div>
+  
+  <!-- features -->
+  <div class="features">
+    <div class="container clearfix"> <!-- clearfix потому, что item-ы у нас на float-ах -->
+     
+      <!-- features-item -->
+      <div class="features-item">
+        <i class="features_item_image"></i> <!-- класс для того, чтобы ровнять -->
+        <h2 class="features_item_title">Beautiful Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet nibh ac dui rhoncus pretium. Cras quis dolor id urna lobortis fermentum.</p>
+      </div>
+      
+      <!-- features-item -->
+      <div class="features-item">
+        <i class="features_item_image"></i> <!-- класс для того, чтобы ровнять -->
+        <h2 class="features_item_title">Built to Perfection</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet nibh ac dui rhoncus pretium. Cras quis dolor id urna lobortis fermentum.</p>
+      </div>
+      
+      <!-- features-item -->
+      <div class="features-item">
+        <i class="features_item_image"></i> <!-- класс для того, чтобы ровнять -->
+        <h2 class="features_item_title">Satisfaction Guaranteed</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet nibh ac dui rhoncus pretium. Cras quis dolor id urna lobortis fermentum.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    
+    <!-- project - сразу с классом container, т.к. у блока нет тянущегося фона -->
+    <section class="section"> <!-- section, т.к. есть заголовок -->
+      <h2 class="section_title">Latest Projects</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+      <div class="project-list clearfix"> <!-- clearfix, т.к. float -->
+
+        <!-- item -->
+        <div class="project-item">
+          <img src="img/project-1.jpg" alt="">
+        </div>
+        <a href="#" class="project-item"> <!-- чтобы сделть :hover-эффект -->
+          <img src="img/project-2.jpg" alt="">
+        </a>
+        <div class="project-item">
+          <img src="img/project-3.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="section"> <!-- section, т.к. есть заголовок -->
+      <h2 class="section_title">Client Testimonials</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="feedback-list"> <!-- без clearfix, т.к. inline-блоки -->
+
+        <!-- item -->
+        <div class="feedback-item">
+          <div class="feedback-item_image">
+            <img src="img/user.jpg" alt="">
+          </div>
+          <p class="feedback-item_text">“Vivamus varius imperdiet mollis. Praesent gravida sollicitudin odio, vel condimentum”</p>
+          <div class="feedback-item_name">Bill Gates</div>
+          <a href="#">www.microsoft.com</a> <!-- ссылка у нас тут одна, поэтому класс ей не задаём -->
+        </div>
+        
+        <!-- item -->
+        <div class="feedback-item">
+          <div class="feedback-item_image">
+            <img src="img/user.jpg" alt="">
+          </div>
+          <p class="feedback-item_text">“Vivamus varius imperdiet mollis. Praesent gravida sollicitudin odio, vel condimentum”</p>
+          <div class="feedback-item_name">Bill Gates</div>
+          <a href="#">www.google.com</a> <!-- ссылка у нас тут одна, поэтому класс ей не задаём -->
+        </div>
+        
+        <!-- item -->
+        <div class="feedback-item">
+          <div class="feedback-item_image">
+            <img src="img/user.jpg" alt="">
+          </div>
+          <p class="feedback-item_text">“Vivamus varius imperdiet mollis. Praesent gravida sollicitudin odio, vel condimentum”</p>
+          <div class="feedback-item_name">Bill Gates</div>
+          <a href="#">www.google.com</a> <!-- ссылка у нас тут одна, поэтому класс ей не задаём -->
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- footer -->
+  <footer class="main-footer">
+    <div class="container clearfix">
+     
+      <!-- copyright -->
+      <p class="copyright">Copyright Made by Jack 2014. All rights reserved.</p>
+      
+      <!-- social -->
+      <div class="social">
+          <a href="#" class="social_item"><i class=""></i></a> <!-- <i> - для иконочного шрифта -->
+          <a href="#" class="social_item"><i class=""></i></a>
+          <a href="#" class="social_item"><i class=""></i></a>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
