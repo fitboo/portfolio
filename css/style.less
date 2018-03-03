@@ -1,3 +1,110 @@
+@import "normalize.less";
+
+/* base */
+
 body {
-  font-size: 16px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  min-width: 1020px; /* 1000+10+10 - чтобы задние фоны, кот тянутся на 100%, никуда не уезжали */
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px; /* чтобы при изменении экрана содержимое не прилипало к краям браузера */
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+
+/* header */
+
+.main-header {
+  background: #262933;
+  padding: 35px 0;
+  
+  &_right{
+    width: 500px;
+    float: right;
+  }
+  
+  .socio {
+    float: right;
+    width: 130px;
+    text-align: right;
+  }
+}
+
+.logo {
+  float: left;
+  width: 250px;
+  font-size: 24px;
+  color: #fff;
+  line-height: 28px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.main-navigation {
+  margin-left: 44px;
+  font-size: 0;
+  float: left;
+  width: 310px;
+  
+  a {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 28px;
+    font-size: 12px;
+    color: #9d9fa5;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 35px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &.active,
+    &:hover {
+      color: #FFF;
+    }
+  }
+}
+
+.social {
+  font-size: 0;
+  float: right;
+  a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 17px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+/* about */
+
+.about {
+  background: #fff;
 }
