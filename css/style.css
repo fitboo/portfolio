@@ -331,7 +331,7 @@ body {
   width: 500px;
   float: right;
 }
-.main-header .socio {
+.main-header .social {
   float: right;
   width: 130px;
   text-align: right;
@@ -371,9 +371,8 @@ body {
 }
 .social {
   font-size: 0;
-  float: right;
 }
-.social a {
+.social_item {
   display: inline-block;
   vertical-align: top;
   font-size: 12px;
@@ -383,10 +382,10 @@ body {
   border-radius: 50%;
   margin-right: 17px;
 }
-.social a:last-child {
+.social_item:last-child {
   margin-right: 0;
 }
-.social a:hover {
+.social_item:hover {
   background: transparent;
 }
 /* about */
@@ -436,8 +435,8 @@ body {
   box-sizing: border-box;
   width: 100%;
   border: 7px solid #fff;
-  -webkit-box-shadow: 1px 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   background-color: #2c2e38;
   background-image: url(../pict/bg-box-new.jpg);
   background-repeat: no-repeat;
@@ -501,4 +500,147 @@ body {
 }
 .btn--transparent:active {
   border: 3px solid transparent;
+}
+.features {
+  padding: 80px 0;
+  background: url("../pict/bg-top.jpg") no-repeat center;
+  background-size: cover;
+}
+.features-item {
+  float: left;
+  width: 250px;
+  text-align: center;
+  color: #fff;
+}
+.features-item_title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.features-item p {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+.features-item:nth-child(2) {
+  margin: 0 125px;
+}
+.section {
+  padding-top: 50px;
+}
+.section_title {
+  font-size: 24px;
+  line-height: 34px;
+  color: #848b90;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.section_title + p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #a5adb2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.project-list {
+  font-size: 0;
+  /* убрали пробелы */
+  text-align: center;
+  /* поставили их по центру */
+}
+.project-item {
+  width: 305px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* чтобы пад и мар не учитывались в их ширине и высоте */
+  padding: 3px;
+  background: #fff;
+  /* этот пункт и выше - это мы так сделали обводку внутреннюю (stroke из PS) */
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  /* гориз-верт-размытие(size)-растяж-цвет */
+  /* в PS: верт-растяж-разм */
+  margin-bottom: 40px;
+}
+.project-item img {
+  width: 100%;
+  /* чтобы картинка не вылезала за пределы */
+}
+.project-item:nth-child(3n + 2) {
+  margin: 0 40px;
+}
+.project-item:hover {
+  opacity: .8;
+}
+.feedback-list {
+  font-size: 0;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.feedback-item {
+  width: 275px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.feedback-item:nth-child(3n + 2) {
+  margin: 0 75px;
+}
+.feedback-item_image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.feedback-item_image img {
+  -webkit-transform: translate(-40px);
+  -ms-transform: translate(-40px);
+  transform: translate(-40px);
+}
+.feedback-item_text {
+  font-size: 20px;
+  line-height: 26px;
+  color: #43b5fd;
+  font-weight: 600;
+}
+.feedback-item_name,
+.feedback-item a {
+  font-size: 13px;
+  line-height: 22px;
+  color: #848b90;
+}
+.feedback-item_name {
+  font-weight: 700;
+}
+.feedback-item a {
+  text-decoration: none;
+  color: #9fa8b2;
+  font-weight: 400;
+}
+.feedback-item a:hover {
+  text-decoration: underline;
+}
+.main-footer {
+  background: #262933;
+  padding: 40px 0;
+}
+.main-footer .copyright {
+  float: left;
+  width: 700px;
+  color: #c9c9c9;
+  font-size: 13px;
+  line-height: 28px;
+  /* зададим такой же, как высота соц кнопок - чтобы текст был по их центру */
+  margin: 0;
+  /* сбросили, т.к. не вставал по центру соц кнопок */
+}
+.main-footer .social {
+  float: right;
 }
